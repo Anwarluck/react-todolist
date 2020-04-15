@@ -24,15 +24,12 @@ export default class App extends Component {
 			title: this.state.item,
 		};
 		const updatedItems = [...this.state.items, newItem];
-		this.setState(
-			{
-				items: updatedItems,
-				id: uuid(),
-				item: "",
-				editItem: false,
-			},
-			() => console.log(this.state.items)
-		);
+		this.setState({
+			items: updatedItems,
+			id: uuid(),
+			item: "",
+			editItem: false,
+		});
 	};
 	clearList = () => {
 		console.log("list cleared");
@@ -55,7 +52,7 @@ export default class App extends Component {
 							handleSubmit={this.handleSubmit}
 							editItem={this.state.editItem}
 						/>
-						s
+
 						<TodoList
 							items={this.state.items}
 							clearList={this.clearList}
