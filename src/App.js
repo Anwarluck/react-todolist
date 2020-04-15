@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import uuid from "uuid";
+import { v1 as uuid } from "uuid";
 import TodoList from "./components/TodoList/TodoList";
 import TodoInput from "./components/TodoList/TodoInput";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default class App extends Component {
 	state = {
